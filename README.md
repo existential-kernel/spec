@@ -1,6 +1,6 @@
-# Existential Kernel — Specification
+# Existence Lang — Specification
 
-Formal specification for ontology nodes in the [Existential Kernel](https://github.com/existential-kernel) framework.
+Formal specification for ontology nodes in the [Existence Lang](https://github.com/existence-lang) framework.
 
 ## Overview
 
@@ -17,7 +17,7 @@ Each concept in the ontology is a **node** — a markdown file following a struc
 
 ## Usage
 
-Ontology repos (like [existential-kernel/ontology](https://github.com/existential-kernel/ontology)) follow this spec. The `exkernel` CLI validates nodes against it.
+Ontology repos (like [existence-lang/ontology](https://github.com/existence-lang/ontology)) follow this spec. The `existence` CLI validates nodes against it.
 
 ## License
 
