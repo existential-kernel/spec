@@ -24,7 +24,7 @@ Ontology terms are organized into concentric rings, from most universal to most 
 
 ## Ring Metadata
 
-Rings are declared in `exkernel.toml` at the ontology repo root:
+Rings are declared in `existence.toml` at the ontology repo root:
 
 ```toml
 [meta]

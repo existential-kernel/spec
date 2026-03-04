@@ -64,9 +64,9 @@ Concrete examples showing the pattern at different scales.}
 
 ## Ring Metadata
 
-Each node belongs to a **ring** — a concentric layer from universal to domain-specific. Ring assignment is declared in `exkernel.toml` at the ontology repo root, not in the node file itself.
+Each node belongs to a **ring** — a concentric layer from universal to domain-specific. Ring assignment is declared in `existence.toml` at the ontology repo root, not in the node file itself.
 
-The `exkernel.toml` format:
+The `existence.toml` format:
 
 ```toml
 [meta]
