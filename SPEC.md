@@ -64,21 +64,32 @@ Concrete examples showing the pattern at different scales.}
 
 ## Ring Metadata
 
-Each node belongs to a **ring** — a concentric layer from universal to domain-specific. Ring assignment is declared in `ring.toml` at the ontology repo root, not in the node file itself.
+Each node belongs to a **ring** — a concentric layer from universal to domain-specific. Ring assignment is declared in `exkernel.toml` at the ontology repo root, not in the node file itself.
 
-The `ring.toml` format:
+The `exkernel.toml` format:
 
 ```toml
-[rings]
+[meta]
+name = "existential-kernel/ontology"
+description = "Reference existential ontology — Ring 0 kernel + Ring 1 software terms"
+
 [rings.0]
 name = "kernel"
-description = "Universal terms, always loaded"
-terms = ["existence", "entity", "system", "domain", "scope", "context", "resolution", "focus", "abstraction", "perspective", "consciousness", "evolution", "story", "pattern"]
+description = "14 universal terms, always loaded. The existential scope."
+terms = [
+  "existence", "entity", "abstraction", "scope", "context", "resolution",
+  "pattern", "system", "domain", "focus", "perspective", "consciousness",
+  "evolution", "story"
+]
 
 [rings.1]
 name = "software"
-description = "Software engineering bridge"
-terms = ["project", "model", "component", "interface", "state", "event", "command", "query", "aggregate", "repository", "service", "factory", "value-object", "specification", "policy", "module", "bounded-context"]
+description = "The DDD bridge — immediately useful for software projects."
+terms = [
+  "project", "model", "algorithm", "state", "type", "definition",
+  "information", "signal", "language", "tool", "environment", "coherence",
+  "communication", "collective", "integrity", "qualitative", "quantitative"
+]
 ```
 
 Ring 0 terms are always loaded. Higher rings are loaded on demand based on project context. See [RINGS.md](./RINGS.md) for the full ring structure specification.

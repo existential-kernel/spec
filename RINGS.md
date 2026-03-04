@@ -19,23 +19,26 @@ Ontology terms are organized into concentric rings, from most universal to most 
 ### Ring 2+: Extended
 - **Scope:** Full philosophical breadth
 - **Loading:** On demand
-- **Count:** Unbounded
+- **Count:** ~80 terms (from btakita/philosophy) and growing
 - **Criteria:** Any concept that can be defined using the SPEC.md template
 
 ## Ring Metadata
 
-Rings are declared in `ring.toml` at the ontology repo root:
+Rings are declared in `exkernel.toml` at the ontology repo root:
 
 ```toml
-[rings]
+[meta]
+name = "existential-kernel/ontology"
+description = "Reference existential ontology — Ring 0 kernel + Ring 1 software terms"
+
 [rings.0]
 name = "kernel"
-description = "Universal terms, always loaded"
+description = "14 universal terms, always loaded. The existential scope."
 terms = ["existence", "entity", ...]
 
 [rings.1]
 name = "software"
-description = "Software engineering bridge"
+description = "The DDD bridge — immediately useful for software projects."
 terms = ["project", "model", ...]
 ```
 
