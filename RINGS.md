@@ -28,7 +28,7 @@ Rings are declared in `exkernel.toml` at the ontology repo root:
 
 ```toml
 [meta]
-name = "existential-kernel/ontology"
+name = "existence-lang/ontology"
 description = "Reference existential ontology — Ring 0 kernel + Ring 1 software terms"
 
 [rings.0]
@@ -55,4 +55,4 @@ Projects extend the base ontology by adding a `## Domain Ontology` section to th
 | Document | entity + context | The unit of conversation |
 ```
 
-Overlay terms reference upstream kernel terms they derive from. The `exkernel` CLI resolves the full chain: Ring 0 → Ring 1 → Domain Overlay.
+Overlay terms reference upstream kernel terms they derive from. The `existence` CLI resolves the full chain: Ring 0 → Ring 1 → Domain Overlay.

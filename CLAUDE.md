@@ -1,6 +1,6 @@
-# Existential Kernel — Specification
+# Existence Lang — Specification
 
-This repo defines the formal specification for ontology nodes in the Existential Kernel framework.
+This repo defines the formal specification for ontology nodes in the Existence Lang framework.
 
 ## Key Files
 

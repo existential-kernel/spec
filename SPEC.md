@@ -70,7 +70,7 @@ The `exkernel.toml` format:
 
 ```toml
 [meta]
-name = "existential-kernel/ontology"
+name = "existence-lang/ontology"
 description = "Reference existential ontology — Ring 0 kernel + Ring 1 software terms"
 
 [rings.0]
@@ -109,4 +109,4 @@ Projects extend the base ontology by adding a `## Domain Ontology` section to th
 
 Overlay terms reference the upstream kernel terms they extend. This creates a resolution chain: Ring 0 (kernel) -> Ring 1 (software) -> Domain Overlay (project-specific).
 
-The `exkernel` CLI resolves domain overlays by reading the project's `CLAUDE.md` and merging overlay terms into the active ontology graph. Overlay terms inherit the Ontology/Axiology/Epistemology structure but are defined inline rather than as separate node files.
+The `existence` CLI resolves domain overlays by reading the project's `CLAUDE.md` and merging overlay terms into the active ontology graph. Overlay terms inherit the Ontology/Axiology/Epistemology structure but are defined inline rather than as separate node files.
