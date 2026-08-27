@@ -44,7 +44,8 @@ Concrete examples showing the pattern at different scales.}
 7. **External refs** use HTML anchors with `target="_blank"`
 8. **Definitions** from external sources are blockquoted (`>`)
 9. **Pattern Expression** grounds the abstract in concrete examples. Epistemology subsection headings are non-normative — lint binds only the required `##` sections — so a domain ontology may prefer plainer headings. The recognized subsection vocabulary is `Cultural Definition` | `Sources` and `Pattern Expression` | `Examples` (kernel spelling | plain spelling); `existence lint` warns on any other Epistemology subsection heading without failing. The plain names trade some meaning for readability, so keep the intent: Examples should show the pattern at more than one scale or resolution (not a flat list of instances), and Sources should first quote how the term is already used around you (the domain's cultural definition) before listing references
-10. **Scope**: definitions are relative to Existence (broadest scope); narrower applications are noted
+10. **Pattern nodes** hold a word that recurs with a different meaning at each scale as *one* node carrying a pattern — a named, recurring resolution of the same forces (the kernel term Pattern) — not one node per meaning (which fragments the vocabulary) and not one vague definition (which explains nothing). Such a node adds two subsections under `## Ontology`, after the lay definition, and this is the recognized Ontology subsection vocabulary: `### Pattern` — **Context** (where the pattern recurs), **Forces** (the tension every occurrence has to resolve), **Resolution** (the shape this domain uses to resolve it), **Related patterns** (links); this is the invariant, what stays true of the word at every scale — and `### Senses` — a table with one row per meaning, ordered **domain (product) meaning first**: the scale it lives at, what it means there in the domain's own words, and how the implementation spells it (route, schema field, table, enum, or code type). `Examples` under Epistemology then maps each sense to concrete implementation evidence, so a reader can go from the domain meaning to the field that carries it. Nodes without a pattern keep the plain form; `existence lint` warns on any other Ontology subsection heading without failing, the same advisory policy as rule 9. Rule of thumb for a new node versus a new sense: a **new node** when the thing has its own lifecycle and identity; a **new sense** when the same word names the same resolution at another scale
+11. **Scope**: definitions are relative to Existence (broadest scope); narrower applications are noted
 
 ## Section Purposes
 
@@ -61,6 +62,7 @@ Concrete examples showing the pattern at different scales.}
 - Nodes link to related nodes — the graph IS the ontology
 - Definitions start broad (Existence scope) and can be narrowed by context
 - The `Pattern Expression` subsection bridges theory to practice (domain ontologies may title it `Examples`)
+- A word with several meanings is one pattern node (`### Pattern` + `### Senses` under Ontology), its senses linked in place rather than split into nodes
 
 ## Ring Metadata
 
